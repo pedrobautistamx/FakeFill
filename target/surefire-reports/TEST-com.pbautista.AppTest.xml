@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.pbautista.AppTest" time="0.006" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="com.pbautista.AppTest" time="0.004" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/opt/jdk1.8.0_162/jre/lib/amd64"/>
@@ -42,7 +42,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/opt/jdk1.8.0_162/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -50,9 +50,10 @@
     <property name="java.version" value="1.8.0_162"/>
     <property name="java.ext.dirs" value="/opt/jdk1.8.0_162/jre/lib/ext:/usr/java/packages/lib/ext"/>
     <property name="securerandom.source" value="file:/dev/./urandom"/>
-    <property name="sun.boot.class.path" value="/opt/jdk1.8.0_162/jre/lib/resources.jar:/opt/jdk1.8.0_162/jre/lib/rt.jar:/opt/jdk1.8.0_162/jre/lib/sunrsasign.jar:/opt/jdk1.8.0_162/jre/lib/jsse.jar:/opt/jdk1.8.0_162/jre/lib/jce.jar:/opt/jdk1.8.0_162/jre/lib/charsets.jar:/opt/jdk1.8.0_162/jre/lib/jfr.jar:/opt/jdk1.8.0_162/jre/classes"/>
+    <property name="sun.boot.class.path" value="/opt/jdk1.8.0_162/jre/lib/resources.jar:/opt/jdk1.8.0_162/jre/lib/rt.jar:/opt/jdk1.8.0_162/jre/lib/sunrsasign.jar:/opt/jdk1.8.0_162/jre/lib/jsse.jar:/opt/jdk1.8.0_162/jre/lib/jce.jar:/opt/jdk1.8.0_162/jre/lib/charsets.jar:/opt/jdk1.8.0_162/jre/lib/jfr.jar:/opt/jdk1.8.0_162/jre/classes:/opt/dynatrace/oneagent/agent/bin/1.141.205.20180424-152628/any/oneagentjava.jar:/opt/dynatrace/oneagent/agent/bin/1.141.205.20180424-152628/any/oneagentjava.rmi.jar:/opt/dynatrace/oneagent/agent/bin/1.141.205.20180424-152628/any/oneagentjava.sql.jar"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="maven.home" value="/opt/maven"/>
+    <property name="org.omg.PortableInterceptor.ORBInitializerClass.org.omg.PortableInterceptor.RuxitOrbInitializer" value=""/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -60,5 +61,5 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.pbautista.AppTest" name="testApp" time="0.006"/>
+  <testcase classname="com.pbautista.AppTest" name="testApp" time="0.004"/>
 </testsuite>
