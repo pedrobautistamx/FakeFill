@@ -3,6 +3,7 @@ package com.pbautista;
 
 
 import com.github.javafaker.Faker;
+import java.nio.file.Paths;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -35,6 +36,8 @@ public class Main {
         String fullname;
         String email;
         String password;
+        String ruta = Paths.get(System.getProperty("user.home")).toAbsolutePath().toString() + "/geckodriver";
+
 
         Faker faker = new Faker();
 
@@ -45,7 +48,7 @@ public class Main {
         email = user + "@gmail.com";
         password = faker.code().isbn10();
 
-        System.setProperty("webdriver.gecko.driver", "/home/pbautista/geckodriver");
+        System.setProperty("webdriver.gecko.driver", ruta);
 
         WebDriver driver = new FirefoxDriver();
         //String URL = "http://localhost:2145/registro.php";
@@ -68,7 +71,7 @@ public class Main {
         pass.sendKeys(password);
         confirmpass.sendKeys(password);
 
-        Thread.sleep(800);
+        Thread.sleep(1000);
         confirmpass.sendKeys(Keys.ENTER);
         //submit.submit();
         // WebElement btn= driver.findElement(By.className("btn btn-default"));
@@ -89,7 +92,7 @@ public class Main {
         System.out.println("esto entra: " +ip);
        
            
-        for(int i=0; i<=times;i++){
+        for(int i=0; i<times;i++){
           fill(ip);
     
          
