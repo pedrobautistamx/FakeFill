@@ -38,6 +38,7 @@ public class Main {
         String password;
         String ruta = Paths.get(System.getProperty("user.home")).toAbsolutePath().toString() + "/geckodriver";
 
+        System.out.println("ruat gecko:" + ruta);
 
         Faker faker = new Faker();
 
@@ -53,6 +54,7 @@ public class Main {
         WebDriver driver = new FirefoxDriver();
         //String URL = "http://localhost:2145/registro.php";
         String URL=url;
+         
         
 
         System.out.println("nombre falso: " + email);
@@ -73,12 +75,15 @@ public class Main {
 
         Thread.sleep(1000);
         confirmpass.sendKeys(Keys.ENTER);
+                Thread.sleep(1000);
+
         //submit.submit();
         // WebElement btn= driver.findElement(By.className("btn btn-default"));
 
         //WebElement btn2=driver.findElement(By.xpath("//input[@type='submit']"));
 //driver.findElement(By.className("submit")).click();
 //btn2.click();
+        
         driver.quit();
 
     }
@@ -92,10 +97,11 @@ public class Main {
         System.out.println("esto entra: " +ip);
        
            
+
         for(int i=0; i<times;i++){
           fill(ip);
     
-         
+          
         
         
         }
